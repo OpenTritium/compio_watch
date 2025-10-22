@@ -2,6 +2,8 @@
 
 A high-performance, asynchronous runtime-agnostic alternative to `tokio::sync::watch`. It uses `parking_lot::RwLock` and `event-listener` as its underlying implementation and provides a `tokio`-compatible API.
 
+## WARNING
+This repo was merged into [`compio/see`](https://github.com/compio-rs/see).
 ## Cross-Runtime Compatibility
 
 This library is completely runtime-agnostic and does not rely on any specific scheduler. It can be used seamlessly in various asynchronous environments such as `smol`, and others(non-tested).
